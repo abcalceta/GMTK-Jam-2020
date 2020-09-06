@@ -1,0 +1,65 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/LevelTextHandling.gd" type="Script" id=1]
+[ext_resource path="res://Assets/theme.tres" type="Theme" id=2]
+[ext_resource path="res://Assets/wall_rock.png" type="Texture" id=3]
+
+[node name="Level0Text" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="wall_rock" type="Sprite" parent="."]
+position = Vector2( 249.334, 86.0756 )
+texture = ExtResource( 3 )
+
+[node name="wall_rock6" type="Sprite" parent="."]
+position = Vector2( 301.028, 480.244 )
+texture = ExtResource( 3 )
+
+[node name="wall_rock7" type="Sprite" parent="."]
+position = Vector2( 713.29, 476.367 )
+texture = ExtResource( 3 )
+
+[node name="wall_rock2" type="Sprite" parent="."]
+position = Vector2( 665.472, 87.368 )
+texture = ExtResource( 3 )
+
+[node name="wall_rock3" type="Sprite" parent="."]
+position = Vector2( 901.974, 277.344 )
+rotation = -1.57079
+texture = ExtResource( 3 )
+
+[node name="wall_rock4" type="Sprite" parent="."]
+position = Vector2( 901.974, 277.344 )
+rotation = -1.57079
+texture = ExtResource( 3 )
+
+[node name="wall_rock5" type="Sprite" parent="."]
+position = Vector2( 89.0817, 299.314 )
+rotation = -1.57079
+texture = ExtResource( 3 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 183.0
+margin_top = 174.0
+margin_right = 779.0
+margin_bottom = 404.0
+theme = ExtResource( 2 )
+bbcode_enabled = true
+bbcode_text = "Oh no!
+There's something wrong with the cave exploration machine!"
+text = "Oh no!
+There's something wrong with the cave exploration machine!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 400.63
+margin_top = 370.906
+margin_right = 837.63
+margin_bottom = 413.906
+theme = ExtResource( 2 )
+text = "Press SPACE to continue"
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,75 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/Objects/Wall Rock.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Character.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/LevelHandling.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/Goal.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/GUI.tscn" type="PackedScene" id=5]
+
+[node name="Level1" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="GUI" parent="." instance=ExtResource( 5 )]
+
+[node name="Character" parent="." instance=ExtResource( 2 )]
+position = Vector2( 383.575, 402.211 )
+
+[node name="Camera2D" parent="Character/KinematicBody2D" index="8"]
+current = false
+
+[node name="WallRock" parent="." groups=[
+"rocks",
+] instance=ExtResource( 1 )]
+position = Vector2( 168, 3 )
+
+[node name="WallRock2" parent="." groups=[
+"rocks",
+] instance=ExtResource( 1 )]
+position = Vector2( 552, 4 )
+
+[node name="WallRock3" parent="." groups=[
+"rocks",
+] instance=ExtResource( 1 )]
+position = Vector2( 940, 6 )
+
+[node name="WallRock4" parent="." groups=[
+"rocks",
+] instance=ExtResource( 1 )]
+position = Vector2( 6, 250 )
+rotation = -1.5708
+
+[node name="WallRock5" parent="." groups=[
+"rocks",
+] instance=ExtResource( 1 )]
+position = Vector2( 204.969, 512.277 )
+rotation = -2.8617
+
+[node name="WallRock8" parent="." groups=[
+"rocks",
+] instance=ExtResource( 1 )]
+position = Vector2( 125.08, 589.151 )
+rotation = -2.8617
+
+[node name="WallRock9" parent="." groups=[
+"rocks",
+] instance=ExtResource( 1 )]
+position = Vector2( 969.19, 509.262 )
+rotation = -3.94106
+
+[node name="WallRock6" parent="." groups=[
+"rocks",
+] instance=ExtResource( 1 )]
+position = Vector2( 589.341, 555.99 )
+rotation = -3.16792
+
+[node name="WallRock7" parent="." groups=[
+"rocks",
+] instance=ExtResource( 1 )]
+position = Vector2( 914.926, 403.749 )
+rotation = -4.06395
+
+[node name="Goal" parent="." instance=ExtResource( 4 )]
+position = Vector2( 911.824, 151.151 )
+rotation = 1.48529
+
+[editable path="Character"]

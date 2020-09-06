@@ -1,0 +1,156 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scripts/LevelHandling.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Character.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Goal.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/GUI.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Objects/Wall Rock.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Objects/SingleRock.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Objects/SingleWater.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/Objects/SingleIce.tscn" type="PackedScene" id=8]
+
+[node name="Level7" type="Node2D"]
+position = Vector2( 411.434, -143.802 )
+script = ExtResource( 1 )
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2( 327.768, 876.901 )
+rotation = 0.439042
+
+[node name="WallRock" parent="Node2D" instance=ExtResource( 5 )]
+position = Vector2( 143.945, -41.7727 )
+
+[node name="WallRock9" parent="Node2D" instance=ExtResource( 5 )]
+position = Vector2( -410.384, 785.392 )
+
+[node name="WallRock10" parent="Node2D" instance=ExtResource( 5 )]
+position = Vector2( -196.118, -255.757 )
+rotation = -2.06929
+
+[node name="WallRock11" parent="Node2D" instance=ExtResource( 5 )]
+position = Vector2( 578.537, -53.2137 )
+
+[node name="WallRock12" parent="Node2D" instance=ExtResource( 5 )]
+position = Vector2( 1029.12, 328.3 )
+
+[node name="SingleRock7" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 385.032, -273.212 )
+
+[node name="WallRock2" parent="Node2D" instance=ExtResource( 5 )]
+position = Vector2( -465.743, -518.612 )
+
+[node name="WallRock3" parent="Node2D" instance=ExtResource( 5 )]
+position = Vector2( -8.36218, 769.846 )
+
+[node name="SingleRock3" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -34.9892, -439.289 )
+rotation = 1.5708
+
+[node name="SingleRock4" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -1100.38, 1045.56 )
+rotation = 1.5708
+
+[node name="WaterBase" parent="Node2D/SingleRock4" instance=ExtResource( 7 )]
+position = Vector2( -1062.73, -896.132 )
+
+[node name="WaterBase2" parent="Node2D/SingleRock4" instance=ExtResource( 7 )]
+position = Vector2( -378.501, 456.879 )
+
+[node name="WaterBase3" parent="Node2D/SingleRock4" instance=ExtResource( 7 )]
+position = Vector2( -1231.68, -303.141 )
+
+[node name="WaterBase4" parent="Node2D/SingleRock4" instance=ExtResource( 7 )]
+position = Vector2( -488.34, -2098.73 )
+
+[node name="WaterBase5" parent="Node2D/SingleRock4" instance=ExtResource( 7 )]
+position = Vector2( -866.167, -1417.47 )
+
+[node name="WaterBase6" parent="Node2D/SingleRock4" instance=ExtResource( 7 )]
+position = Vector2( -944.344, -479.893 )
+
+[node name="WaterBase7" parent="Node2D/SingleRock4" instance=ExtResource( 7 )]
+position = Vector2( 692.222, -214.667 )
+
+[node name="WallRock4" parent="Node2D" instance=ExtResource( 5 )]
+position = Vector2( -659.593, -284.482 )
+rotation = 1.5708
+
+[node name="SingleRock5" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -125.45, -60.4564 )
+rotation = 1.5708
+
+[node name="SingleRock6" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -562.266, 686.032 )
+rotation = 1.5708
+
+[node name="WallRock5" parent="Node2D" instance=ExtResource( 5 )]
+position = Vector2( -667.146, 138.464 )
+rotation = 1.5708
+
+[node name="WallRock15" parent="Node2D" instance=ExtResource( 5 )]
+position = Vector2( -642.245, 571.781 )
+rotation = 1.5708
+
+[node name="WallRock8" parent="Node2D" instance=ExtResource( 5 )]
+position = Vector2( 1259.4, 564.562 )
+rotation = 1.5708
+
+[node name="WallRock13" parent="Node2D" instance=ExtResource( 5 )]
+position = Vector2( 800.305, 122.713 )
+rotation = 1.5708
+
+[node name="WallRock14" parent="Node2D" instance=ExtResource( 5 )]
+position = Vector2( 265.129, 959.03 )
+rotation = 1.5708
+
+[node name="WallRock16" parent="Node2D" instance=ExtResource( 5 )]
+position = Vector2( 765.822, 990.32 )
+rotation = 1.5708
+
+[node name="SingleRock" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 636.179, 240.768 )
+rotation = 1.5708
+
+[node name="SingleRock2" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -413.191, 411.144 )
+rotation = 1.5708
+
+[node name="WallRock6" parent="Node2D" instance=ExtResource( 5 )]
+position = Vector2( 499.695, 1146.04 )
+
+[node name="WallRock7" parent="Node2D" instance=ExtResource( 5 )]
+position = Vector2( 988.392, 796.163 )
+
+[node name="SingleIce" parent="Node2D" instance=ExtResource( 8 )]
+position = Vector2( -229.355, 246.366 )
+rotation = -0.439042
+
+[node name="SingleIce3" parent="Node2D" instance=ExtResource( 8 )]
+position = Vector2( -79.9958, 506.728 )
+rotation = -0.439042
+
+[node name="SingleIce4" parent="Node2D" instance=ExtResource( 8 )]
+position = Vector2( 169.255, 541.382 )
+rotation = -0.439042
+
+[node name="SingleIce5" parent="Node2D" instance=ExtResource( 8 )]
+position = Vector2( 169.255, 541.382 )
+rotation = -0.439042
+
+[node name="SingleIce2" parent="Node2D" instance=ExtResource( 8 )]
+position = Vector2( 404.453, 523.038 )
+rotation = -0.439042
+
+[node name="SingleIce6" parent="Node2D" instance=ExtResource( 8 )]
+position = Vector2( 523.817, 754.14 )
+rotation = -0.439042
+
+[node name="Goal" parent="." instance=ExtResource( 3 )]
+position = Vector2( 403.183, 1941.89 )
+rotation = 0.439042
+z_index = 10
+
+[node name="GUI" parent="." instance=ExtResource( 4 )]
+
+[node name="Character" parent="." instance=ExtResource( 2 )]
+position = Vector2( 62.0589, 370.894 )

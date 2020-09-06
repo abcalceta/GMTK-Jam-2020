@@ -1,0 +1,103 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Scenes/Objects/SingleRock.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Objects/Wall Rock.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Objects/Wall Water.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Character.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scripts/LevelHandling.gd" type="Script" id=5]
+[ext_resource path="res://Scenes/Goal.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/GUI.tscn" type="PackedScene" id=7]
+
+[node name="Level3" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="WallRock7" parent="." groups=[
+"rocks",
+] instance=ExtResource( 2 )]
+position = Vector2( 1154.52, 220.716 )
+rotation = -1.57666
+
+[node name="WallRock9" parent="." groups=[
+"rocks",
+] instance=ExtResource( 2 )]
+position = Vector2( 1174.66, 608.416 )
+rotation = -1.57666
+
+[node name="SingleRock2" parent="." groups=[
+"rocks",
+] instance=ExtResource( 1 )]
+position = Vector2( 1104.32, 849.225 )
+rotation = -1.57666
+
+[node name="WallRock11" parent="." groups=[
+"rocks",
+] instance=ExtResource( 2 )]
+position = Vector2( 249.209, 1027.43 )
+rotation = -1.8169
+
+[node name="WallRock10" parent="." groups=[
+"rocks",
+] instance=ExtResource( 2 )]
+position = Vector2( 867.525, 1028.84 )
+rotation = -0.985628
+
+[node name="WallRock" parent="." groups=[
+"rocks",
+] instance=ExtResource( 2 )]
+position = Vector2( 167.652, -38.5902 )
+
+[node name="WallRock2" parent="." groups=[
+"rocks",
+] instance=ExtResource( 2 )]
+position = Vector2( 565.422, -26.0025 )
+
+[node name="WallRock8" parent="." groups=[
+"rocks",
+] instance=ExtResource( 2 )]
+position = Vector2( 945.569, 24.3481 )
+
+[node name="WallRock3" parent="." groups=[
+"rocks",
+] instance=ExtResource( 2 )]
+position = Vector2( 147.511, 472.469 )
+
+[node name="WallRock4" parent="." groups=[
+"rocks",
+] instance=ExtResource( 2 )]
+position = Vector2( 507.519, 1202.55 )
+
+[node name="WallRock6" parent="." groups=[
+"rocks",
+] instance=ExtResource( 2 )]
+position = Vector2( 262.89, 644.168 )
+rotation = -1.2179
+
+[node name="WallRock5" parent="." groups=[
+"rocks",
+] instance=ExtResource( 2 )]
+position = Vector2( -13.6107, 218.198 )
+rotation = -1.57666
+
+[node name="SingleRock" parent="." groups=[
+"rocks",
+] instance=ExtResource( 1 )]
+position = Vector2( 1011.17, 839.155 )
+
+[node name="Wall Water" parent="." instance=ExtResource( 3 )]
+position = Vector2( 72.1292, 199.701 )
+rotation = -1.60578
+
+[node name="Wall Water2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 356.61, 662.928 )
+rotation = -1.14417
+
+[node name="Goal" parent="Wall Water2" instance=ExtResource( 6 )]
+position = Vector2( -284.609, 322.947 )
+
+[node name="Wall Water3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 885.292, 111.588 )
+
+[node name="Character" parent="." instance=ExtResource( 4 )]
+position = Vector2( 324.762, 226.578 )
+
+[node name="GUI" parent="." instance=ExtResource( 7 )]
